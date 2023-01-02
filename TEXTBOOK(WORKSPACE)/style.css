@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eef3f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navbar style */
+
+.header{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    background-color: #fff;
+    padding: 10px;   
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-left img{
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-right{
+    display: flex;
+}
+
+.header-search{
+padding: 10px;
+display: flex;
+align-items: center;
+border-radius: 5px;
+height: 22px;
+color: gray;
+background: #eef3f8;
+}
+
+.header-search input{
+    width: none;
+    outline:none;
+    border: none;
+    background: none;
+}
+
+.headerOption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: rgb(79, 74, 74);
+    cursor: pointer;
+}
+
+.headerOption:hover{
+    color: black;
+}
+
+.headerOption h3{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.headerOption h3:hover{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #0a66c2;
+}
+
+.headerOption-icon{
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.online{
+    position:relative;
+}
+
+.online::after{
+    content: '3';
+    color: #fff;
+    text-align: center;
+    width: 15px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius:45%;
+    right: 4px;
+    top: -8px;
+    background: rgb(183, 27, 27);
+    position: absolute;
+}
+
+
+.headerOption .verticle-bar {
+    position: sticky;
+    text-align: center;
+    padding-left: 80px;
+    font-size: 40px;
+}
+
+.nav-profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.profile-arow{
+    margin-top: 40px;
+}
+
+.headerOption .headersubscribe{
+    padding-left: 20px;
+    text-align: center;
+    margin-top: 8px;
+    color: gray;
+}
+
+/* main body style */
+
+.body-main{
+    display: flex;
+    margin-top: 35px;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sidebar{
+    position: sticky;
+    top: 80px;
+    flex: 0.3;
+    border-radius: 10px;
+    text-align: left;
+    height: fit-content;
+}
+
+.sidebar-top .cover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ 
+.sidebar-top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.sidebar-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.sidebar-profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-top h2{
+    margin-top: 25px;
+}
+.sidebar-top h4{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+ .sidebar-stats{
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+ }
+
+ .sidebar-stat{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-stat p{
+    color: gray;
+    font-size: 13px;
+    font-weight:600;
+    text-shadow: 12px;
+}
+
+.sidebar-statNumber{
+    font-weight: bold;
+    color: #0a66c2 !important;  
+}
+
+.sidebar-topstats{
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+.sidebar-topstat{
+    margin-top: 5px;
+    display: flex; 
+    justify-content: space-between;
+    }
+    
+.sidebar-topstat p{
+    color: gray;
+    font-size: 12px;
+    font-weight:600;
+    text-shadow: 12px;
+}
+.sidebar-topstat h5{
+    text-align: left;
+}
+
+.sidebar-topstatNumber{
+    padding-top: 10px;
+    font-weight: bold;
+    color: #0a66c2 !important; 
+}
+
+.sidebar-link{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    border-top:1px solid lightgray;
+}
+
+.sidebar-link b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.sidebar-link img{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar-bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar-recentItem{
+   display: flex;
+   font-size: 12px;
+   color: gray;
+   font-weight: bolder;
+   cursor: pointer;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+.sidebar-recentItem1{
+    display: flex;
+   font-size: 12px;
+   color: gray;
+   font-weight: bolder;
+   cursor: pointer;
+   margin-bottom: 5px;
+   padding: 5px;
+
+} 
+.sidebar-recentItem span{
+    margin-top: 2px;
+}
+.sidebar-recentItem:hover,
+.sidebar-recentItem1:hover{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar-bottom p{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.sidebar-recentItem1 img{
+    height: 25px;
+    width: 25px;
+}
+
+.sidebar-recentItem1 p{
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+
+/* Feed Style */
+
+.feed{
+    flex: 0.6;
+    margin: 0 20px;
+}
+
+.feed-inputContainer{
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;   
+}
+
+.feed-inputProfile{
+    position: absolute;
+    margin-top: 1px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.feed-input{
+    position: relative;
+    display: flex;
+    margin-left: 50px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.feed-input form{
+    display: flex;
+    width: 100%;
+    height: 25px;
+}
+
+.feed-input form input{
+    border: none;
+    flex: 1;
+    margin-left: 5px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.feed-inputOptions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputOptions h4{
+    margin-left: 5px;
+}
+
+.inputOptions{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inputOptions:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.sort-by{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.sort-by hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: black;
+}
+
+/* post style */
+
+.feed-input-Options{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid lightgray;
+}
+
+.input-Options h4{
+    margin-left: 5px;
+}
+
+.input-Options{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+.input-Options:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+/* post starts  */
+
+.posts{
+    background-color:#fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.posts-header{
+    display: flex;
+    margin-bottom: 10px;
+}
+.inputProfile{
+    margin-top: 1px;
+    width: 50px;
+    height: 55px;
+}
+
+.posts-info{
+    margin-left: 10px;
+}
+
+.posts-info p{
+    font-size: 15px;
+    color: gray;
+}
+
+.posts-info h2{
+    font-size: 20px;
+}
+
+.posts-body{
+    margin-bottom: 20px;
+}
+
+.posts-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6px;
+}
+.posts-stats div{
+    display: flex;
+    align-items: center;
+}
+.posts-stats img{
+    width: 20px;
+    height: 20px;
+    margin-right: -7px;
+}
+.liked-users{
+    margin-left: 10px;
+}
+
+/* widgets style */
+
+.widgets-main{
+    position: sticky;
+    top: 80px;
+    flex: 0.4;
+    border-radius: 10px;
+    height: fit-content;
+   
+}
+.widgets-top{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.widgets-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.widgets-header img{
+    width: 20px;
+    height: 20px;
+}
+.widgets-artical{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.widgets-artical:hover{
+    background-color: whitesmoke;
+}
+
+.widgets-artical-left{
+    color: #000;
+    margin-right: 5px;
+}
+
+.widgets-artical-left .material-icons{
+    font-size: 15px;
+}
+
+.widgets-artical-right{
+    flex: 1;
+}
+
+.widgets-artical-right h4{
+    font-size: 14px;
+}
+
+.widgets-artical-right p{
+    font-size: 12px;
+    color: gray;
+}
+
+/* wedgit midle */
+
+.widgets-mid{
+    position: relative;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+/* wedgit end */
+
+.widgets-end{
+    position: sticky;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}    
+.widgetsProfile{
+    display: flex;
+    width: 35px;
+    height: 40px;
+}
+
+.widgets-add1,
+.widgets-add2{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.widgets-add-left{
+    position: absolute;
+    margin-right: 15px;
+}
+
+.widgets-add-right{
+    padding-left: 50px;
+}
+
+.widgets-add-right h4{
+    font-size: 14px;
+}
+
+.widgets-add-right p{
+    font-size: 12px;
+    color: gray;
+}
+
+.widgets-input{
+    margin-top:15px ;
+   padding-left: 6px;
+   padding-right: 6px;
+   border: 1px solid whitesmoke;
+   border-radius: 30px;
+}
+
+.widgets-input:hover{
+    background-color: whitesmoke;
+}
+
+.widgets-input h4{
+    text-align: center;
+}
+
+.widgets-add1{
+    margin-top: 10px;
+    align-items: center;
+    border-bottom:1px solid lightgray;
+}
